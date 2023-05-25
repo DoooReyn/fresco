@@ -2,7 +2,7 @@ build
 dist
 mkdocs_cinder.egg-info/
 .vscode
-site/*
+site/
 cinder/__pycache__/*
 .DS_Store
 .venv
