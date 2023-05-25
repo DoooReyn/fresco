@@ -1,0 +1,23 @@
+# ADB 常用指令
+
+-   查看设备序列号和连接状态: `adb devices`
+-   安装 APK: `adb -s DEVICE_SERIAL_ID install APK_PATH`
+-   卸载 APP: `adb -s DEVICE_SERIAL_ID uninstall APP_PACKAGE_NAME`
+-   列出除了系统应用的第三方应用包名: `adb -s DEVICE_SERIAL_ID shell pm list packages -3`
+-   查看 APP 名称: `adb -s DEVICE_SERIAL_ID shell pm list packages | findstr APP_PACKAGE_NAME`
+-   查看并过滤日志: `adb -s DEVICE_SERIAL_ID logcat | findstr xxx`
+-   清除应用数据与缓存: `adb -s DEVICE_SERIAL_ID shell pm clear APP_PACKAGE_NAME`
+-   截屏: `adb -s DEVICE_SERIAL_ID shell screencap /sdcard/a.png`
+-   录屏: `adb -s DEVICE_SERIAL_ID shell screenrecord /sdcard/a.mp4`
+-   接收电脑文件: `adb -s DEVICE_SERIAL_ID push local remote`
+-   上传设备文件: `adb -s DEVICE_SERIAL_ID pull remote local`
+-   获取设备序列号: `adb -s DEVICE_SERIAL_ID get-serialno`
+-   获取设备 MAC 地址: `adb -s DEVICE_SERIAL_ID shell cat /sys/class/net/wlan0/address`
+-   查看设备型号: `adb -s DEVICE_SERIAL_ID shell getprop ro.product.model`
+-   查看 Android 系统版本: `adb -s DEVICE_SERIAL_ID shell getprop ro.build.version.release`
+-   查看屏幕分辨率: `adb -s DEVICE_SERIAL_ID shell wm size`
+-   列出当前进程: `adb -s DEVICE_SERIAL_ID shell ps | findstr APP_PACKAGE_NAME`
+-   杀死某个包的进程: `adb -s DEVICE_SERIAL_ID shell am force-stop APP_PACKAGE_NAME`
+-   获取包占用内存: `adb -s DEVICE_SERIAL_ID shell dumpsys meminfo APP_PACKAGE_NAME`
+-   获取包占用 cpu: `adb -s DEVICE_SERIAL_ID shell dumpsys cpuinfo | findstr APP_PACKAGE_NAME`
+-   获取包流畅度: `adb -s DEVICE_SERIAL_ID shell dumpsys gfxinfo APP_PACKAGE_NAME`

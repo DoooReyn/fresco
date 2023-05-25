@@ -1,0 +1,165 @@
+site_name: DoooReynの星际航行日志
+site_url: https://doooreyn.github.io/
+site_author: DoooReyn
+site_description: "A blog that records everything"
+copyright: Copyright &copy; 2021 DoooReyn <a href="http://beian.miit.gov.cn" target="_blank">闽ICP备19014786号-1</a>
+
+theme:
+    name: lux
+    custom_dir: cinder
+    highlightjs: true
+    colorscheme: dracula
+    disable_nav_previous_next: false
+    disable_footer_except_revision: false
+    hljs_languages:
+        - bat
+        - c
+        - cpp
+        - javascript
+        - lua
+        - php
+        - python
+        - shell
+        - typescript
+        - yaml
+
+extra:
+    social:
+        - name: Github
+          link: https://github.com/DoooReyn
+          icon: iconmonstr-github-1
+
+nav:
+    - 关于我: index.md
+    - 游戏城:
+          - 游戏厅:
+                - 大唐真龙传: "游戏厅/大唐真龙传.md"
+                - 元气偶像季: "游戏厅/元气偶像季.md"
+                - 传奇系列: "游戏厅/传奇系列.md"
+                - 电娱大厅: "游戏厅/电娱大厅.md"
+                - 印尼/泰语棋牌: "游戏厅/印尼、泰语棋牌.md"
+          - 造轮子:
+                - 瞎鼓捣演示案例: "造轮子/瞎鼓捣演示案例.md"
+                - 手势识别与训练模型: "造轮子/手势识别与训练模型.md"
+                - PackManV2一体化打包工具: "造轮子/PackManV2一体化打包工具.md"
+                - Cocos2d-x 嵌入本地 HTTP Server: "造轮子/Cocos2d-x 嵌入本地 HTTP Server.md"
+                - Cocos2d-x 嵌入本地 WebSocket Server: "造轮子/Cocos2d-x 嵌入本地 WebSocket Server.md"
+                - Cocos2d-x 目录监视器: "造轮子/Cocos2d-x 目录监视器.md"
+                - Cocos2d-x FMOD 集成指南: "造轮子/Cocos2d-x FMOD 集成指南.md"
+                - Cocos2d-x 使用 spdlog 日志库: "造轮子/Cocos2d-x 使用 spdlog 日志库.md"
+                - Cocos2d-x 接入 lua-protobuf: "造轮子/Cocos2d-x 接入 lua-protobuf.md"
+                - Adjust 签名第二版 Android 集成指南: "造轮子/Adjust 签名第二版 Android 集成指南.md"
+                - 新活动中心演示: "造轮子/新活动中心演示.md"
+          - 知识点:
+                - 记一次 Cocos Creator Android 打包总结: "知识点/记一次 Cocos Creator Android 打包总结.md"
+                - Cocos Creator Spine · 更换纹理: "知识点/Cocos Creator Spine · 更换纹理.md"
+                - Cocos Creator 滤镜 · 马赛克: "知识点/Cocos Creator 滤镜 · 马赛克.md"
+                - Cocos 中的 Size: "知识点/Cocos 中的 Size.md"
+    - 语言:
+          - Lua:
+                - Lua 数组实现: "语言/Lua/Lua 数组实现.md"
+                - Lua HashMap 实现: "语言/Lua/Lua HashMap 实现.md"
+                - Lua 字符串插值实现: "语言/Lua/Lua 字符串插值实现.md"
+                - 更简洁的 lua 逻辑代码: "语言/Lua/更简洁的 lua 逻辑代码.md"
+                - Lua API 浅析:
+                      - Lua_API Basic Types: "语言/Lua/LUA_API Basic Types.md"
+                      - Lua_API lua_absindex: "语言/Lua/LUA_API lua_absindex.md"
+                      - Lua_API lua_Alloc: "语言/Lua/LUA_API lua_Alloc.md"
+                      - Lua_API lua_arith (1): "语言/Lua/LUA_API lua_arith (1).md"
+                      - Lua_API lua_arith (2): "语言/Lua/LUA_API lua_arith (2).md"
+                      - Lua_API lua_atpanic: "语言/Lua/LUA_API lua_atpanic.md"
+                      - Lua_API lua_call & lua_callk: "语言/Lua/LUA_API lua_call & lua_callk.md"
+          - JavaScript:
+                - Faker.js 分析: "语言/JavaScript/Faker.js 分析.md"
+          - Python:
+                - 如何用 Python 实现字符串插值: "语言/Python/如何用 Python 实现字符串插值.md"
+                - Pylint-你很棒，但我不想跟你 PaPaPa: "语言/Python/Pylint-你很棒，但我不想跟你 PaPaPa.md"
+                - Python 爬取 gank.io 今日力推: "语言/Python/Python 爬取 gank.io 今日力推.md"
+                - 我有干货，你敢收吗？: "语言/Python/我有干货，你敢收吗？.md"
+                - RubyChina 优质帖 Markdown 格式整理（第一部分）: "语言/Python/RubyChina 优质帖 Markdown 格式整理（第一部分）.md"
+                - RubyChina 优质帖 Markdown 格式整理（第三部分）: "语言/Python/RubyChina 优质帖 Markdown 格式整理（第三部分）.md"
+                - RubyChina 优质帖 Markdown 格式整理（第二部分）: "语言/Python/RubyChina 优质帖 Markdown 格式整理（第二部分）.md"
+          - PHP:
+                - Windows 安装 PHP7.4: "语言/PHP/Windows 安装 PHP7.4.md"
+                - CentOS 安装 PHP7.4: "语言/PHP/CentOS 安装 PHP7.4.md"
+                - 查看 php.ini 存放地址: "语言/PHP/查看 php.ini 存放地址.md"
+                - 安装 Composer: "语言/PHP/安装 Composer.md"
+                - 安装 MixPhp: "语言/PHP/安装 MixPhp.md"
+                - 安装 Swoole: "语言/PHP/安装 Swoole.md"
+    - 工具箱:
+          - 微读自动阅读器: "工具箱/微读自动阅读器.md"
+          - 工资明细助手: "工具箱/工资明细助手.md"
+          - BMFont Toolbox 使用指南: "工具箱/BMFont Toolbox 使用指南.md"
+          - 查看文件 md5 sha1 sha256 值: "工具箱/查看文件 md5 sha1 sha256 值.md"
+    - 医药箱:
+          - Android:
+                - ADB 常用指令: "医药箱/Android/ADB 常用指令.md"
+                - ADB 调试连接夜神模拟器: "医药箱/Android/ADB 调试连接夜神模拟器.md"
+                - Android NDK 历史版本: "医药箱/Android/Android NDK 历史版本.md"
+                - Android SDK 版本之间的关系: "医药箱/Android/Android SDK 版本之间的关系.md"
+                - Android Studio 占用极大内存的解决方法: "医药箱/Android/Android Studio 占用极大内存的解决方法.md"
+                - Android Studio Clean 与 Rebuild 的区别: "医药箱/Android/Android Studio Clean 与 Rebuild 的区别.md"
+          - Mac:
+                - AppleScript 搭配 Alfred 真乃利器: "医药箱/Mac/AppleScript 搭配 Alfred 真乃利器.md"
+                - Mac 音量微调: "医药箱/Mac/Mac 音量微调.md"
+                - Mac 应用已损坏解决方案: "医药箱/Mac/Mac 应用已损坏解决方案.md"
+                - Mac nvm 完全卸载指南: "医药箱/Mac/Mac nvm 完全卸载指南.md"
+                - Mac zsh 粘贴加速: "医药箱/Mac/Mac zsh 粘贴加速.md"
+                - MacOS 安装 autojump: "医药箱/Mac/MacOS 安装 autojump.md"
+                - MacOS 安装 Pillow: "医药箱/Mac/MacOS 安装 Pillow.md"
+                - MacOS 卸载 Java9: "医药箱/Mac/MacOS 卸载 Java9.md"
+                - MacOS Java 版本管理: "医药箱/Mac/MacOS Java 版本管理.md"
+                - Xcode error:
+                      - your session has expired, please log in: "医药箱/Mac/your session has expired, please log in.md"
+          - Git:
+                - Git 设置代理: "医药箱/Git/Git 设置代理.md"
+                - 解决 Github 贡献值不计算问题: "医药箱/Git/解决 Github 贡献值不计算问题.md"
+          - Interview:
+                - HR 面: "医药箱/Interview/HR 面.md"
+                - 技术面: "医药箱/Interview/技术面.md"
+                - 个人总结: "医药箱/Interview/个人总结.md"
+          - 查看 npm 安装位置: "医药箱/查看 npm 安装位置.md"
+          - 解决 Windows 长路径问题: "医药箱/解决 Windows 长路径问题.md"
+    - 图书馆:
+          - 算法:
+                - 算法的时间与空间复杂度: "图书馆/算法/算法的时间与空间复杂度.md"
+                - 查找算法直接及其算法实现: "图书馆/算法/查找算法总结及其算法实现.md"
+                - 排序算法性能及选择总结: "图书馆/算法/排序算法性能及选择总结.md"
+          - 书籍:
+                - Github上的电子书: "图书馆/Github上的电子书.md"
+                - 近万本技术电子书免费下载: "图书馆/近万本技术电子书免费下载.md"
+                - 游戏开发电子书下载: "图书馆/游戏开发电子书下载.md"
+                - J·布罗克曼-未来五十年: "图书馆/J·布罗克曼-未来五十年.md"
+                - 北岛《波兰来客》: "图书馆/北岛《波兰来客》.md"
+                - 陈平《代谢增长论》: "图书馆/陈平《代谢增长论》.md"
+                - 陈平-自由的对立面不是专政是自律: "图书馆/陈平-自由的对立面不是专政是自律.md"
+                - 科比·布莱恩特 《曼巴精神:科比自传》: "图书馆/科比·布莱恩特 《曼巴精神：科比自传》.md"
+                - 肯·罗宾逊 卢·阿罗尼卡-什么是最好的教育: "图书馆/肯·罗宾逊 卢·阿罗尼卡-什么是最好的教育.md"
+                - 劳伦斯·布洛克-小说的八百万种写法: "图书馆/劳伦斯·布洛克-小说的八百万种写法.md"
+                - 李敖-北京法源寺: "图书馆/李敖-北京法源寺.md"
+                - 李淼·《三体》中的物理学: "图书馆/李淼·《三体》中的物理学.md"
+                - 罗伯特·L.凯利-第五次开始: "图书馆/罗伯特·L.凯利-第五次开始.md"
+                - 吕思勉《中国通史》: "图书馆/吕思勉《中国通史》绪论.md"
+                - 明道-图解逻辑学: "图书馆/明道-图解逻辑学.md"
+                - 青山七惠·《一个人的好天气》: "图书馆/青山七惠《 一个人的好天气》.md"
+                - 清水荣司《认生的人:如何克服社交焦虑》: "图书馆/清水荣司《认生的人：如何克服社交焦虑》.md"
+                - 瑞·达利欧 《原则》: "图书馆/瑞·达利欧 《原则》.md"
+                - 卫宫士郎 《FateStay Night Unlimited Blade Works》: "图书馆/卫宫士郎 《FateStay Night Unlimited Blade Works》.md"
+                - 温铁军 《乡建笔记:新青年与乡村的生命对话》: "图书馆/温铁军 《乡建笔记：新青年与乡村的生命对话》.md"
+                - 尤瓦尔·赫拉利《未来简史:从智人到智神》: "图书馆/尤瓦尔·赫拉利《未来简史：从智人到智神》.md"
+
+markdown_extensions:
+    - admonition
+    - codehilite:
+          guess_lang: true
+          linenums: true
+    - toc:
+          permalink: true
+          baselevel: 2
+          separator: "_"
+    - footnotes
+    - meta
+    - def_list
+
+plugins:
+    - mkdocs-video
